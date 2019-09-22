@@ -15,8 +15,8 @@ class Driver(object):
 
             "deviceName": "emulator-5554",
             "platformName": "Android",
-            "platformVersion": "6.0.1",
-            # "app": "/Users/cola/Desktop/news_article_lite_tt_lite_hb_lite-dsp-xz-and11_v7.0.7_3a56adb.apk",
+            "platformVersion": "4.4.2",
+            # "app": "D:\\jinritoutiao5.9.5_anfensi.com.apk",
             "appPackage": "com.ss.android.article.lite",
             "appActivity": "com.ss.android.article.lite.activity.SplashActivity",
             "noReset": True,
@@ -24,7 +24,7 @@ class Driver(object):
             "resetKeyboard": True
 
         }
-        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities=desired_caps)
         print('已经启动，等待6s中。。。')
 
         time.sleep(6)
